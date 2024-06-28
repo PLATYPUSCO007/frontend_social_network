@@ -56,9 +56,9 @@ export const Login = () => {
         {logged == "logged" ? (
             <strong className="alert alert-success">¡Usuario identificado correctamente!</strong>
           ) : ''}
-          {logged == "error" ? (
-            <strong className="alert alert-danger">¡El usuario no se ha identificado!</strong>
-          ) : ''}
+        {logged == "error" ? (
+          <strong className="alert alert-danger">¡El usuario no se ha identificado!</strong>
+        ) : ''}
 
         <form className="form-login" onSubmit={loginUser} >
 
