@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { PublicLayout } from '../components/layouts/public/PublicLayout';
-import { PrivateLayout } from '../components/layouts/private/PrivateLayout';
+import { PublicLayout } from '../components/layout/public/PublicLayout';
+import { PrivateLayout } from '../components/layout/private/PrivateLayout';
 import { Login } from '../components/user/Login';
 import { Register } from '../components/user/Register';
 import { Feed } from '../components/publication/Feed';
-import { Error404 } from '../components/layouts/Error404';
+import { Error404 } from '../components/layout/Error404';
 import { AuthProvider } from '../context/AuthProvider';
 import { Logout } from '../components/user/Logout';
 import { People } from '../components/user/People';
