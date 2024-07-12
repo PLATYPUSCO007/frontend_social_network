@@ -22,7 +22,7 @@ export const Register = () => {
     let newUser = form;
 
     // Petición a la API del Backend para guardar usuario en la BD
-    const request = await fetch(Global.url + "user/register", {
+    const request = await fetch(Global.url + "user/create", {
       method: "POST",
       body: JSON.stringify(newUser),
       headers: {
@@ -34,7 +34,7 @@ export const Register = () => {
     const data = await request.json();
 
     // Verificar si el estado de la respuesta del backend es "created" seteamos la variable saved con "saved" y si no, le asignamos "error", esto es para mostrar por pantalla el resultado del registro del usuario
-    if (data.status == "created") {
+    if (data.status.toLowerCase() == "success") {
       setSaved("saved");
 
       // Mostrar modal de éxito
